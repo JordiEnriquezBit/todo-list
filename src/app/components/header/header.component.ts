@@ -8,6 +8,7 @@ import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 export class HeaderComponent implements OnInit {
 
   @Output() toggleFooterEvt = new EventEmitter();
+  @Output() openModalEvt = new EventEmitter();
 
   /* showFooter = true; */
 
@@ -19,5 +20,9 @@ export class HeaderComponent implements OnInit {
   toggleFooter(){
     /* this.showFooter = !this.showFooter; */
     this.toggleFooterEvt.emit();
+  }
+
+  openModal(){
+    this.openModalEvt.emit();
   }
 }

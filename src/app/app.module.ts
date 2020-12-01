@@ -19,6 +19,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ReactiveFormsModule } from '@angular/forms';
 import { environment} from '../environments/environment';
 import { HeaderComponent } from './components/header/header.component';
+import { ModalComponent } from './components/item/modal/modal.component';
 
 
 @NgModule({
@@ -31,7 +32,8 @@ import { HeaderComponent } from './components/header/header.component';
     ListComponent,
     CardComponent,
     DialogComponent,
-    HeaderComponent
+    HeaderComponent,
+    ModalComponent
   ],
   imports: [
     BrowserModule,
@@ -44,6 +46,6 @@ import { HeaderComponent } from './components/header/header.component';
   ],
   providers: [],
   bootstrap: [AppComponent],
-  entryComponents:[DialogComponent]
+  entryComponents:[DialogComponent,ModalComponent]
 })
 export class AppModule { }

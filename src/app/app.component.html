@@ -1,6 +1,7 @@
-<app-header (toggleFooterEvt)="toggleFooter()"></app-header>
-<app-item [formGroup]='formGroup'
-          (addItem)='addItem($event)'></app-item>
+<app-header (toggleFooterEvt)="toggleFooter()"
+            (openModalEvt)="openModal()"></app-header>
+<!-- <app-item [formGroup]='formGroup'
+          (addItem)='addItem($event)'></app-item> -->
 <app-list [itemList]='itemList'
           [formGroup]='createForm()'></app-list>
 <app-error>
