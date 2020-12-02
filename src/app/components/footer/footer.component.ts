@@ -1,4 +1,4 @@
-import { OnDestroy } from '@angular/core';
+import { Input, OnDestroy, SimpleChanges, ViewChild } from '@angular/core';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FooterComponent implements OnInit, OnDestroy {
 
+  listLength:number;
   constructor() { }
 
   ngOnInit(): void {
@@ -16,6 +17,9 @@ export class FooterComponent implements OnInit, OnDestroy {
   ngOnDestroy(){
       console.log('Bye, bye footer');
   }
+
+
+
 
 
 }

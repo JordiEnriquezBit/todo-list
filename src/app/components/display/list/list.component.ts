@@ -39,6 +39,9 @@ export class ListComponent implements OnInit, OnChanges {
 
   }
 
+
+
+
   ngOnInit(): void {
     /* this.openDialog(); */
   }
